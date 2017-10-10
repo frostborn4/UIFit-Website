@@ -360,6 +360,7 @@ body {
   font-family: Arial, Verdana, sans-serif;
   text-align: center;
   color: #665544; 
+  border-radius: 10px;
 }
 #nav, #feature, .article, #footer {
   background-color: #efefef;
@@ -368,6 +369,23 @@ body {
 }
 #feature{
   height: 100px;
+}
+body {
+  background-color: #8FA48F;
+}
+
+body ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px;
+}
+
+body ol li {
+  list-style-type: decimal;
+}
+
+p.rule1 {
+  text-align: left;
+  padding-left: 20px;
 }
 
 li {
