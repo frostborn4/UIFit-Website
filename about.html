@@ -3,14 +3,6 @@
 	<head>
 		<title>U.I. Fit Team Website</title>
 		<link rel="stylesheet" type="text/css" href="css/960_12_col.css">
-		<script >
-        function codeAddress() {	var x = document.getElementById("usDiv");
-		var y = document.getElementById("mentorDiv");
-            y.style.display = "none";
-			x.style.display = "block";
-        }
-        window.onload = codeAddress;
-        </script>
 	</head>
 	<body>
 		<div class="container_12 clearfix">
@@ -23,23 +15,94 @@
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li><a href="project.html">Project</a></li>
-							<li><a href="about.html">About</a></li>
+							<li><a href="about.html">The Team</a></li>
+							<li><a href="mentor-about.html">Our Mentor</a></li>
 							<li><a href="pr-archive.html">Archive</a></li>
 						</ul>
 					</div>
 			</div>
-		<div id="nav">
+		<!--<div id="nav">
 			<ul>
-				<li><button onclick="myFunction()" id="1">About Us</button></li>
-				<li><button onclick="myFunction()" id="2">About Our Mentor</button></li>
+				<li><button onclick="toggle_visibility(usDiv)">About Us</button></li>
+				<li><button onclick="toggle_visibility(mentorDiv)">About Our Mentor</button></li>
 			</ul>
+		</div>//-->
+		<div id="charles" class="article grid_6">
+			<p align="left">
+				<img src="images/ch-headshot.jpg" align="left" width="150" height="190">
+				<ol>
+					<li><b>Team Positions</b>
+						<ol>
+							<li>Team Lead</li>
+							<li>Communicator</li>
+							<li>Recorder</li>
+						</ol>
+					</li>
+					<li><b>Prior Experience</b>
+						<ol>
+							<li>Worked at the Martin-Springer institute at NAU developing a website for the team.
+							</li>
+						</ol>
+					</li>
+				</ol>
+			</p>
 		</div>
-		<div id="usDiv" class="article grid_12">
-			<p> This block we describe us </p>
+		<div id="tanner" class="article grid_6">
+			<p>
+				<img src="images/ta-headshot.jpg" align="left" width="150" height="190">
+				<ol>
+					<li><b>Team Positions</b>
+						<ol>
+							<li>Calendar Coordinator</li>
+							<li>Trello Manager</li>
+							<li>Transcriber</li>
+						</ol>
+					</li>
+					<li><b>Prior Experience</b>
+						<ol>
+							<li>Created a website prototype for Brelje and Associates lawfirm.
+							</li>
+						</ol>
+					</li>
+				</ol>
+			</p>
 		</div>
-
-		<div id="mentorDiv" class="article grid_12">
-			<p> This block we describe Dr. Razi </p>
+		<div id="josh" class="article grid_6">
+			<p>
+				<img src="images/jo-headshot.jpg" align="left" width="150" height="190">
+				<ol>
+					<li><b>Team Positions</b>
+						<ol>
+							<li>Release Manager
+						</ol>
+					</li>
+					<li><b>Prior Experience</b>
+						<ol>
+							<li>Create and maintain open-source tools for researchers at the Pathogen and Microbiome Institute (PMI); as well as gather and manipulate biological data.
+							</li>
+						</ol>
+					</li>
+				</ol>
+			</p>
+		</div>
+		<div id="matt" class="article grid_6">
+			<p>
+				<img src="images/ma-headshot.jpg" align="left" width="150" height="190">
+				<ol>
+					<li><b>Team Positions</b>
+						<ol>
+							<li>Architect</li>
+							<li>Website Design</li>
+						</ol>
+					</li>
+					<li><b>Prior Experience</b>
+						<ol>
+							<li>Worked at NAU Web Content Management, as well as an internship working on the Giving Children Hope website.
+							</li>
+						</ol>
+					</li>
+				</ol>
+			</p>
 		</div>
 
 		<div id="footer" class="grid_12">
@@ -47,27 +110,19 @@
 		</div>
 	</div>
 
-<script>
 
+<!--
+<script type="text/javascript">
 
-
-function myFunction(elem) {
-
-    if(elem.id == 1)
-    {	var x = document.getElementById("usDiv");
-		var y = document.getElementById("mentorDiv");
-
-	   	y.style.display = "none";
-	   	x.style.display = "block";
-	   	 
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
     }
-    else
-    {	var x = document.getElementById("usDiv");
-		var y = document.getElementById("mentorDiv");
-	   	x.style.display = "none";
-	   	y.style.display = "block";
-	}    
-}
+
 </script>
+//-->
 </body>
 </html>
